@@ -56,27 +56,16 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createHyperSubLayers({
-    spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
-    ),
-    // b = "B"rowse
-    b: {
-      // Quarterly "P"lan
-      f: open("https://facebook.com"),
-      p: open("https://mxstbr.com/cal"),
-      r: open("https://reddit.com"),
-      t: open("https://twitter.com"),
-      l: open("https://linkedin.com"),
-      y: open("https://news.ycombinator.com"),
-    },
     // o = "Open" applications
     o: {
       a: app("Arc"),
       g: app("Google Chrome"),
       c: app("Visual Studio Code"),
       d: app("Discord"),
-      s: app("Slack"),
+      m: app("Messages"),
       n: app("Notion"),
+      p: app("System Settings"),
+      s: app("Slack"),
       t: app("Terminal"),
       w: app("Warp"),
     },
@@ -316,7 +305,7 @@ fs.writeFileSync(
   JSON.stringify(
     {
       global: {
-        show_in_menu_bar: false,
+        show_in_menu_bar: true,
       },
       profiles: [
         {
