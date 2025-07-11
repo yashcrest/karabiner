@@ -164,6 +164,22 @@
                                         "value": 1
                                     }
                                 ],
+                                "description": "Open -a 'Microsoft Outlook.app'",
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Microsoft Outlook.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_o",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
                                 "description": "Open -a 'Messages.app'",
                                 "from": {
                                     "key_code": "m",
@@ -228,12 +244,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'Terminal.app'",
+                                "description": "Open -a 'Microsoft Teams.app'",
                                 "from": {
                                     "key_code": "t",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Terminal.app'" }],
+                                "to": [{ "shell_command": "open -a 'Microsoft Teams.app'" }],
                                 "type": "basic"
                             },
                             {

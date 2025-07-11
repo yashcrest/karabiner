@@ -62,11 +62,13 @@ const rules: KarabinerRules[] = [
       g: app("Google Chrome"),
       c: app("Visual Studio Code"),
       d: app("Discord"),
+      // Out'l'ook
+      l: app('Microsoft Outlook'),
       m: app("Messages"),
       n: app("Notion"),
       p: app("System Settings"),
       s: app("Slack"),
-      t: app("Terminal"),
+      t: app("Microsoft Teams"),
       w: app("Warp"),
     },
 
