@@ -59,17 +59,19 @@ const rules: KarabinerRules[] = [
     // o = "Open" applications
     o: {
       a: app("Arc"),
-      g: app("Google Chrome"),
-      c: app("Visual Studio Code"),
       d: app("Discord"),
+      g: app("Google Chrome"),
       // Out'l'ook
-      l: app('Microsoft Outlook'),
+      l: app("Microsoft Outlook"),
       m: app("Messages"),
       n: app("Notion"),
       p: app("System Settings"),
       s: app("Slack"),
       t: app("Microsoft Teams"),
       w: app("Warp"),
+      v: app("Visual Studio Code"),
+      y: app("Youtube Music"),
+      z: app("Zen"),
     },
 
     // TODO: This doesn't quite work yet.
@@ -264,16 +266,17 @@ const rules: KarabinerRules[] = [
 
     // r = "Raycast"
     r: {
-      c: open("raycast://extensions/thomas/color-picker/pick-color"),
-      n: open("raycast://script-commands/dismiss-notifications"),
-      e: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
-      ),
-      p: open("raycast://extensions/raycast/raycast/confetti"),
-      a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
-      h: open(
+      //   clip'b'oard
+      b: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
+      // emo'j'i
+      j: open(
+        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+      ),
+      //   c: open("raycast://extensions/thomas/color-picker/pick-color"),
+      //   n: open("raycast://script-commands/dismiss-notifications"),
+      p: open("raycast://extensions/raycast/raycast/confetti"),
     },
   }),
   {
