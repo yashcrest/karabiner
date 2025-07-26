@@ -63,7 +63,7 @@ const rules: KarabinerRules[] = [
       c: app("Visual Studio Code"),
       d: app("Discord"),
       // Out'l'ook
-      l: app('Microsoft Outlook'),
+      l: app("Microsoft Outlook"),
       m: app("Messages"),
       n: app("Notion"),
       p: app("System Settings"),
@@ -315,6 +315,16 @@ fs.writeFileSync(
           complex_modifications: {
             rules,
           },
+          fn_function_keys: [
+            {
+              from: { key_code: "f3" },
+              to: [{ apple_vendor_top_case_key_code: "illumination_down" }],
+            },
+            {
+              from: { key_code: "f4" },
+              to: [{ apple_vendor_top_case_key_code: "illumination_up" }],
+            },
+          ],
         },
       ],
     },
