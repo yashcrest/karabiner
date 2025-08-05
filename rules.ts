@@ -318,6 +318,16 @@ fs.writeFileSync(
           complex_modifications: {
             rules,
           },
+          fn_function_keys: [
+            {
+              from: { key_code: "f3" },
+              to: [{ apple_vendor_top_case_key_code: "illumination_down" }],
+            },
+            {
+              from: { key_code: "f4" },
+              to: [{ apple_vendor_top_case_key_code: "illumination_up" }],
+            },
+          ],
         },
       ],
     },
