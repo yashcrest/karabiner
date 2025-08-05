@@ -197,13 +197,13 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      p: {
-        to: [
-          {
-            key_code: "play_or_pause",
-          },
-        ],
-      },
+      //   p: {
+      //     to: [
+      //       {
+      //         key_code: "play_or_pause",
+      //       },
+      //     ],
+      //   },
       semicolon: {
         to: [
           {
