@@ -197,13 +197,8 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      //   p: {
-      //     to: [
-      //       {
-      //         key_code: "play_or_pause",
-      //       },
-      //     ],
-      //   },
+      p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
+
       semicolon: {
         to: [
           {
