@@ -61,14 +61,14 @@ const rules: KarabinerRules[] = [
       a: app("Arc"),
       d: app("Discord"),
       g: app("Google Chrome"),
-      // Out'l'ook
-      l: app("Microsoft Outlook"),
       m: app("Messages"),
       n: app("Notion"),
       p: app("System Settings"),
       s: app("Slack"),
       t: app("Microsoft Teams"),
       w: app("Warp"),
+      // O'u'tlook
+      u: app("Microsoft Outlook"),
       v: app("Visual Studio Code"),
       y: app("Youtube Music"),
       z: app("Zen"),

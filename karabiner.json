@@ -148,22 +148,6 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'Microsoft Outlook.app'",
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Microsoft Outlook.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_o",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "Open -a 'Messages.app'",
                                 "from": {
                                     "key_code": "m",
@@ -250,6 +234,22 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'Warp.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_o",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "description": "Open -a 'Microsoft Outlook.app'",
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Microsoft Outlook.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -765,21 +765,6 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "p",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "key_code": "play_or_pause" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_s",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
                                     "key_code": "semicolon",
                                     "modifiers": { "optional": ["any"] }
                                 },
@@ -1264,6 +1249,16 @@
                     }
                 ]
             },
+            "fn_function_keys": [
+                {
+                    "from": { "key_code": "f3" },
+                    "to": [{ "apple_vendor_top_case_key_code": "illumination_down" }]
+                },
+                {
+                    "from": { "key_code": "f4" },
+                    "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
+                }
+            ],
             "name": "Default",
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
