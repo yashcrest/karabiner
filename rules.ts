@@ -175,13 +175,7 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      i: {
-        to: [
-          {
-            key_code: "display_brightness_increment",
-          },
-        ],
-      },
+      i: open(`-b com.apple.SystemProfiler `),
       k: {
         to: [
           {
