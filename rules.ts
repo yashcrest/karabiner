@@ -63,7 +63,7 @@ const rules: KarabinerRules[] = [
       g: app("Google Chrome"),
       m: app("Messages"),
       n: app("Notion"),
-      p: app("System Settings"),
+      p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       s: app("Slack"),
       t: app("Microsoft Teams"),
       w: app("Warp"),

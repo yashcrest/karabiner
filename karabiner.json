@@ -180,12 +180,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'System Settings.app'",
+                                "description": "Open /System/Library/PreferencePanes/Displays.prefPane",
                                 "from": {
                                     "key_code": "p",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'System Settings.app'" }],
+                                "to": [{ "shell_command": "open /System/Library/PreferencePanes/Displays.prefPane" }],
                                 "type": "basic"
                             },
                             {
