@@ -196,12 +196,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'System Settings.app'",
+                                "description": "Open /System/Library/PreferencePanes/Displays.prefPane",
                                 "from": {
                                     "key_code": "p",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'System Settings.app'" }],
+                                "to": [{ "shell_command": "open /System/Library/PreferencePanes/Displays.prefPane" }],
                                 "type": "basic"
                             },
                             {
@@ -700,10 +700,10 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "i",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "volume_decrement" }],
+                                "to": [{ "key_code": "display_brightness_increment" }],
                                 "type": "basic"
                             },
                             {
@@ -715,10 +715,10 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "j",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "display_brightness_increment" }],
+                                "to": [{ "key_code": "volume_decrement" }],
                                 "type": "basic"
                             },
                             {

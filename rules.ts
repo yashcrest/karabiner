@@ -65,7 +65,7 @@ const rules: KarabinerRules[] = [
       l: app("Microsoft Outlook"),
       m: app("Messages"),
       n: app("Notion"),
-      p: app("System Settings"),
+      p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       s: app("Slack"),
       t: app("Microsoft Teams"),
       w: app("Warp"),
@@ -168,17 +168,17 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      j: {
-        to: [
-          {
-            key_code: "volume_decrement",
-          },
-        ],
-      },
       i: {
         to: [
           {
             key_code: "display_brightness_increment",
+          },
+        ],
+      },
+      j: {
+        to: [
+          {
+            key_code: "volume_decrement",
           },
         ],
       },
@@ -197,13 +197,6 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      //   p: {
-      //     to: [
-      //       {
-      //         key_code: "play_or_pause",
-      //       },
-      //     ],
-      //   },
       semicolon: {
         to: [
           {
