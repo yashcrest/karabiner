@@ -207,6 +207,7 @@ const rules: KarabinerRules[] = [
       // "T"heme
       t: open(`raycast://extensions/raycast/system/toggle-system-appearance`),
       c: open("raycast://extensions/raycast/system/open-camera"),
+      p: open(`-b com.apple.SystemProfiler`),
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
