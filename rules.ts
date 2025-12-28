@@ -191,7 +191,7 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
+      p: open(`-b com.apple.SystemProfiler`),
 
       semicolon: {
         to: [
