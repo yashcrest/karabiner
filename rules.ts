@@ -43,7 +43,7 @@ const rules: KarabinerRules[] = [
   ...createHyperSubLayers({
     // o = "Open" applications
     o: {
-      a: app("Arc"),
+      a: app("Activity Monitor"),
       d: app("Discord"),
       g: app("Google Chrome"),
       m: app("Messages"),
