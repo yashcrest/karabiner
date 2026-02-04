@@ -271,6 +271,7 @@ const rules: KarabinerRules[] = [
       //   c: open("raycast://extensions/thomas/color-picker/pick-color"),
       //   n: open("raycast://script-commands/dismiss-notifications"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
+      k: open("raycast://extensions/raycast/system/toggle-system-appearance"),
     },
   }),
   {
