@@ -61,8 +61,6 @@ const rules: KarabinerRules[] = [
       a: app("Arc"),
       d: app("Discord"),
       g: app("Google Chrome"),
-      // Out'l'ook
-      l: app("Microsoft Outlook"),
       m: app("Messages"),
       n: app("Notion"),
       p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
@@ -71,7 +69,6 @@ const rules: KarabinerRules[] = [
       w: app("Warp"),
       v: app("Visual Studio Code"),
       y: app("Youtube Music"),
-      z: app("Zen"),
     },
 
     // TODO: This doesn't quite work yet.
