@@ -55,6 +55,11 @@ const rules: KarabinerRules[] = [
       v: app("Visual Studio Code"),
       y: app("Youtube Music"),
     },
+    // displayPlacer
+    d: {
+      hyphen: shell`opt/homebrew/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"`,
+      equal_sign: shell`opt/homebrew/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1512x982 hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"`,
+    },
 
     // TODO: This doesn't quite work yet.
     // l = "Layouts" via Raycast's custom window management
