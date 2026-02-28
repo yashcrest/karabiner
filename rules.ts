@@ -57,8 +57,8 @@ const rules: KarabinerRules[] = [
     },
     // displayPlacer
     d: {
-      hyphen: shell`opt/homebrew/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"`,
-      equal_sign: shell`opt/homebrew/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1512x982 hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"`,
+      hyphen: shell`/opt/homebrew/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1680x1050 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"`,
+      equal_sign: shell`/opt/homebrew/bin/displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"`,
       //   using displayPlacer - to put mac display to left of monitor
       h: shell`/opt/homebrew/bin/displayplacer "id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0"`,
 
