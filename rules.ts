@@ -66,7 +66,7 @@ const rules: KarabinerRules[] = [
       p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       s: app("Slack"),
       t: app("Microsoft Teams"),
-      w: app("Warp"),
+      w: app("Ghostty"),
       // O'u'tlook
       u: app("Microsoft Outlook"),
       v: app("Visual Studio Code"),
@@ -101,7 +101,7 @@ const rules: KarabinerRules[] = [
     s: {
       // "D"o not disturb toggle
       d: open(
-        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
+        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`,
       ),
       u: {
         to: [
@@ -199,11 +199,11 @@ const rules: KarabinerRules[] = [
     r: {
       //   clip'b'oard
       b: open(
-        "raycast://extensions/raycast/clipboard-history/clipboard-history"
+        "raycast://extensions/raycast/clipboard-history/clipboard-history",
       ),
       // emo'j'i
       j: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols",
       ),
       //   c: open("raycast://extensions/thomas/color-picker/pick-color"),
       //   n: open("raycast://script-commands/dismiss-notifications"),
@@ -240,6 +240,6 @@ fs.writeFileSync(
       ],
     },
     null,
-    2
-  )
+    2,
+  ),
 );
