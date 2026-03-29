@@ -63,7 +63,6 @@ const rules: KarabinerRules[] = [
       g: app("Google Chrome"),
       m: app("Messages"),
       n: app("Notion"),
-      p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       s: app("Slack"),
       t: app("Microsoft Teams"),
       w: app("Ghostty"),
@@ -118,6 +117,7 @@ const rules: KarabinerRules[] = [
         ],
       },
       i: open(`-b com.apple.SystemProfiler `),
+      p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       k: {
         to: [
           {
@@ -133,7 +133,7 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      p: open(`-b com.apple.SystemProfiler`),
+	i: open(`-b com.apple.SystemProfile`),
 
       semicolon: {
         to: [
