@@ -66,7 +66,7 @@ const rules: KarabinerRules[] = [
       s: app("Slack"),
       t: app("Microsoft Teams"),
       w: app("Ghostty"),
-      // O'u'tlook
+      // O`u`tlook
       u: app("Microsoft Outlook"),
       v: app("Visual Studio Code"),
       y: app("Youtube Music"),
