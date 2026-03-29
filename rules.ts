@@ -51,7 +51,7 @@ const rules: KarabinerRules[] = [
       p: app(`Passwords`),
       s: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       t: app("Microsoft Teams"),
-      w: app("Warp"),
+      w: app("Ghostty"),
       v: app("Visual Studio Code"),
       y: app("Youtube Music"),
     },
