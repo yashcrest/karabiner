@@ -61,6 +61,7 @@ const rules: KarabinerRules[] = [
       a: app("Activity Monitor"),
       d: app("Discord"),
       g: app("Google Chrome"),
+      p: app("Passwords"),
       m: app("Messages"),
       n: app("Notion"),
       s: app("Slack"),
