@@ -110,7 +110,8 @@ const rules: KarabinerRules[] = [
 
     // s = "System"
     s: {
-      i: open(`-b com.apple.SystemProfiler `),
+      // System `i`nfo via System Profiler
+      i: open(`-b com.apple.SystemProfiler`),
       p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       h: {
         to: [
@@ -190,8 +191,6 @@ const rules: KarabinerRules[] = [
       j: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
-      //   c: open("raycast://extensions/thomas/color-picker/pick-color"),
-      //   n: open("raycast://script-commands/dismiss-notifications"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
       k: open("raycast://extensions/raycast/system/toggle-system-appearance"),
     },
