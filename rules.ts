@@ -92,7 +92,16 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-
+      // ful'l' screen
+      l : {
+        description: "Window: Fullscreen",
+        to: [
+          {
+            key_code: "f",
+            modifiers: ["left_control", "left_command"],
+          },
+        ],
+      },
       //   using displayPlacer - to put mac display to left of monitor
       h: shell`/opt/homebrew/bin/displayplacer "id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0"`,
 
@@ -209,13 +218,17 @@ const rules: KarabinerRules[] = [
       b: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
+      // searc'h'
+      h: open("raycast://extensions/raycast/file-search/search-files"),
       // emo'j'i
       j: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
       //   c: open("raycast://extensions/thomas/color-picker/pick-color"),
-      //   n: open("raycast://script-commands/dismiss-notifications"),
+      // n: open("raycast://script-commands/dismiss-notifications"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
+      // st'o're
+      o: open("raycast://extensions/raycast/raycast/store"),
       k: open("raycast://extensions/raycast/system/toggle-system-appearance"),
     },
   }),
