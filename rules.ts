@@ -143,11 +143,19 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+      h: {
+        to: [
+          {
+            key_code: "left_arrow",
+            modifiers: ["left_control"],
+          },
+        ],
+      },
       l: {
         to: [
           {
-            key_code: "q",
-            modifiers: ["right_control", "right_command"],
+            key_code: "right_arrow",
+            modifiers: ["left_control"],
           },
         ],
       },
