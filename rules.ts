@@ -202,6 +202,8 @@ const rules: KarabinerRules[] = [
       b: open(
         "raycast://extensions/raycast/clipboard-history/clipboard-history"
       ),
+      // searc'h'
+      h: open("raycast://extensions/raycast/file-search/search-files"),
       // emo'j'i
       j: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
