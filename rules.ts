@@ -110,52 +110,24 @@ const rules: KarabinerRules[] = [
 
     // s = "System"
     s: {
-      // "D"o not disturb toggle
-      d: open(
-        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
-      ),
-      u: {
-        to: [
-          {
-            key_code: "volume_increment",
-          },
-        ],
-      },
-      j: {
-        to: [
-          {
-            key_code: "volume_decrement",
-          },
-        ],
-      },
       i: open(`-b com.apple.SystemProfiler `),
       p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
-      k: {
+      h: {
         to: [
           {
-            key_code: "display_brightness_decrement",
+            key_code: "left_arrow",
+            modifiers: ["left_control"],
           },
         ],
       },
       l: {
         to: [
           {
-            key_code: "q",
-            modifiers: ["right_control", "right_command"],
+            key_code: "right_arrow",
+            modifiers: ["left_control"],
           },
         ],
       },
-
-      semicolon: {
-        to: [
-          {
-            key_code: "fastforward",
-          },
-        ],
-      },
-      // "T"heme
-      t: open(`raycast://extensions/raycast/system/toggle-system-appearance`),
-      c: open("raycast://extensions/raycast/system/open-camera"),
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
