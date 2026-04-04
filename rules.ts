@@ -96,6 +96,16 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+       // ful'l' screen
+      l : {
+        description: "Window: Fullscreen",
+        to: [
+          {
+            key_code: "f",
+            modifiers: ["left_control", "left_command"],
+          },
+        ],
+      },
     },
 
     // s = "System"
