@@ -66,32 +66,8 @@ const rules: KarabinerRules[] = [
       j: shell`/opt/homebrew/bin/displayplacer "id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(300,1440) degree:0"`,
     },
 
-    // TODO: This doesn't quite work yet.
-    // l = "Layouts" via Raycast's custom window management
-    // l: {
-    //   // Coding layout
-    //   c: shell`
-    //     open -a "Visual Studio Code.app"
-    //     sleep 0.2
-    //     open -g "raycast://customWindowManagementCommand?position=topLeft&relativeWidth=0.5"
-
-    //     open -a "Terminal.app"
-    //     sleep 0.2
-    //     open -g "raycast://customWindowManagementCommand?position=topRight&relativeWidth=0.5"
-    //   `,
-    // },
-
     // w = "Window" via rectangle.app
     w: {
-      semicolon: {
-        description: "Window: Hide",
-        to: [
-          {
-            key_code: "h",
-            modifiers: ["right_command"],
-          },
-        ],
-      },
       // ful'l' screen
       l : {
         description: "Window: Fullscreen",
@@ -102,11 +78,6 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      //   using displayPlacer - to put mac display to left of monitor
-      h: shell`/opt/homebrew/bin/displayplacer "id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0"`,
-
-      //   to put mac display to bottom of monitor
-      j: shell`/opt/homebrew/bin/displayplacer "id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(300,1440) degree:0"`,
     },
 
     // s = "System"

@@ -477,27 +477,6 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Window: Hide",
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "h",
-                                        "modifiers": ["right_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_w",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "Window: Fullscreen",
                                 "from": {
                                     "key_code": "l",
@@ -509,38 +488,6 @@
                                         "modifiers": ["left_control", "left_command"]
                                     }
                                 ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_w",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "/opt/homebrew/bin/displayplacer \"id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\" \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0\"",
-                                "from": {
-                                    "key_code": "h",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer \"id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\" \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0\"" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_w",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "/opt/homebrew/bin/displayplacer \"id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\" \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(300,1440) degree:0\"",
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer \"id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\" \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(300,1440) degree:0\"" }],
                                 "type": "basic"
                             }
                         ]
