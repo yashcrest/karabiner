@@ -48,7 +48,7 @@ const rules: KarabinerRules[] = [
       g: app("Google Chrome"),
       m: app("Messages"),
       n: app("Notion"),
-      p: app(`Passwords`),
+      p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       s: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       t: app("Ghostty"),
       w: app("Warp"),
@@ -69,7 +69,7 @@ const rules: KarabinerRules[] = [
     // w = "Window" via rectangle.app
     w: {
       // ful'l' screen
-      l : {
+      l: {
         description: "Window: Fullscreen",
         to: [
           {
