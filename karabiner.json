@@ -617,12 +617,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -b com.apple.SystemProfiler ",
+                                "description": "Open -b com.apple.SystemProfiler",
                                 "from": {
                                     "key_code": "i",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "open -b com.apple.SystemProfiler " }],
+                                "to": [{ "shell_command": "open -b com.apple.SystemProfiler" }],
                                 "type": "basic"
                             },
                             {
