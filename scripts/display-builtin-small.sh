@@ -3,9 +3,18 @@
 # If an external display is connected, keep it as the main display (origin 0,0)
 # and preserve the current relative arrangement of the built-in display.
 DISPLAYPLACER=/opt/homebrew/bin/displayplacer
-BUILTIN_RES="1512x982"
 
 LIST=$($DISPLAYPLACER list)
+
+# Extract the second-largest available scaled resolution for the built-in display.
+# Groups by width (one entry per distinct width, using the tallest height),
+# matching the curated resolution tiers macOS shows in Display preferences.
+BUILTIN_RES=$(echo "$LIST" | grep -oE 'res:[0-9]+x[0-9]+ hz:[0-9]+ color_depth:8 scaling:on' \
+  | grep -oE '[0-9]+x[0-9]+' \
+  | sort -u \
+  | awk -F x '{ if ($2 > max[$1]) max[$1]=$2 } END { for (w in max) print w"x"max[w] }' \
+  | sort -t x -k1,1n \
+  | tail -2 | head -1)
 
 BUILTIN=$(echo "$LIST" | awk '/^Persistent screen id/{id=$NF} /^Type:.*built in/{print id; exit}')
 EXTERNAL=$(echo "$LIST" | awk '/^Persistent screen id/{id=$NF} /^Type:.*external/{print id; exit}')
