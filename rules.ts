@@ -45,15 +45,11 @@ const rules: KarabinerRules[] = [
     o: {
       a: app("Activity Monitor"),
       d: app("Discord"),
-      g: app("Google Chrome"),
       m: app("Messages"),
-      n: app("Notion"),
       p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
-      s: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       t: app("Ghostty"),
       w: app("Warp"),
       v: app("Visual Studio Code"),
-      y: app("Youtube Music"),
     },
     // displayPlacer
     d: {
