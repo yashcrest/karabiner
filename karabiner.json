@@ -137,22 +137,6 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'Google Chrome.app'",
-                                "from": {
-                                    "key_code": "g",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Google Chrome.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_o",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "Open -a 'Messages.app'",
                                 "from": {
                                     "key_code": "m",
@@ -169,41 +153,9 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "Open -a 'Notion.app'",
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Notion.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_o",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "Open /System/Library/PreferencePanes/Displays.prefPane",
                                 "from": {
                                     "key_code": "p",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open /System/Library/PreferencePanes/Displays.prefPane" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_o",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open /System/Library/PreferencePanes/Displays.prefPane",
-                                "from": {
-                                    "key_code": "s",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open /System/Library/PreferencePanes/Displays.prefPane" }],
@@ -255,22 +207,6 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'Visual Studio Code.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "hyper_sublayer_o",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "description": "Open -a 'Youtube Music.app'",
-                                "from": {
-                                    "key_code": "y",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Youtube Music.app'" }],
                                 "type": "basic"
                             }
                         ]
@@ -347,12 +283,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "/opt/homebrew/bin/displayplacer \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1680x1050 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\"",
+                                "description": "~/Developer/karabiner/scripts/display-builtin-normal.sh",
                                 "from": {
                                     "key_code": "hyphen",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1680x1050 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\"" }],
+                                "to": [{ "shell_command": "~/Developer/karabiner/scripts/display-builtin-normal.sh" }],
                                 "type": "basic"
                             },
                             {
@@ -363,12 +299,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "/opt/homebrew/bin/displayplacer \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\"",
+                                "description": "~/Developer/karabiner/scripts/display-builtin-small.sh",
                                 "from": {
                                     "key_code": "equal_sign",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\"" }],
+                                "to": [{ "shell_command": "~/Developer/karabiner/scripts/display-builtin-small.sh" }],
                                 "type": "basic"
                             },
                             {
@@ -379,12 +315,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "/opt/homebrew/bin/displayplacer \"id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\" \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0\"",
+                                "description": "~/Developer/karabiner/scripts/display-multi-left.sh",
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer \"id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\" \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0\"" }],
+                                "to": [{ "shell_command": "~/Developer/karabiner/scripts/display-multi-left.sh" }],
                                 "type": "basic"
                             },
                             {
@@ -395,12 +331,12 @@
                                         "value": 1
                                     }
                                 ],
-                                "description": "/opt/homebrew/bin/displayplacer \"id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\" \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(300,1440) degree:0\"",
+                                "description": "~/Developer/karabiner/scripts/display-multi-bottom.sh",
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer \"id:3993FF47-D1E4-4B4F-9D9E-CBB603251FEC res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0\" \"id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1800x1169 hz:120 color_depth:8 enabled:true scaling:on origin:(300,1440) degree:0\"" }],
+                                "to": [{ "shell_command": "~/Developer/karabiner/scripts/display-multi-bottom.sh" }],
                                 "type": "basic"
                             }
                         ]
