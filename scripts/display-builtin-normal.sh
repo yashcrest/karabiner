@@ -4,6 +4,7 @@
 # and preserve the current relative arrangement of the built-in display.
 DISPLAYPLACER=/opt/homebrew/bin/displayplacer
 BUILTIN_RES="1680x1050"
+HERTZ=60
 
 # Parse displayplacer list into per-display blocks and extract id/type/origin.
 LIST=$($DISPLAYPLACER list)
@@ -32,8 +33,8 @@ if [ -n "$EXTERNAL" ]; then
   NBX=$((BX - EX))
   NBY=$((BY - EY))
   $DISPLAYPLACER \
-    "id:$EXTERNAL res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" \
-    "id:$BUILTIN res:$BUILTIN_RES hz:120 color_depth:8 enabled:true scaling:on origin:($NBX,$NBY) degree:0"
+    "id:$EXTERNAL res:2560x1440 hz:$HERTZ color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" \
+    "id:$BUILTIN res:$BUILTIN_RES hz:$HERTZ color_depth:8 enabled:true scaling:on origin:($NBX,$NBY) degree:0"
 else
-  $DISPLAYPLACER "id:$BUILTIN res:$BUILTIN_RES hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
+  $DISPLAYPLACER "id:$BUILTIN res:$BUILTIN_RES hz:$HERTZ color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
 fi

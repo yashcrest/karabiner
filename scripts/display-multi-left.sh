@@ -7,4 +7,4 @@ EXTERNAL=$($DISPLAYPLACER list | awk '/^Persistent screen id/{id=$NF} /^Type:.*e
 # Built-in origin is translated by (0,+250) to preserve the original relative layout.
 $DISPLAYPLACER \
   "id:$EXTERNAL res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" \
-  "id:$BUILTIN res:1680x1050 hz:120 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0"
+  "id:$BUILTIN res:1680x1050 hz:60 color_depth:8 enabled:true scaling:on origin:(0,250) degree:0"
