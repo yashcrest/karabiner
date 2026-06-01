@@ -3,7 +3,7 @@
 # If an external display is connected, keep it as the main display (origin 0,0)
 # and preserve the current relative arrangement of the built-in display.
 DISPLAYPLACER=/opt/homebrew/bin/displayplacer
-BUILTIN_RES="1512x982"
+BUILTIN_RES="1728x1117"
 
 LIST=$($DISPLAYPLACER list)
 
