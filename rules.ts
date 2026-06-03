@@ -59,7 +59,6 @@ const rules: KarabinerRules[] = [
     // o = "Open" applications
     o: {
       a: app("Activity Monitor"),
-      d: app("Discord"),
       g: app("Google Chrome"),
       p: app("Passwords"),
       m: app("Messages"),
@@ -96,8 +95,8 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-       // ful'l' screen
-      l : {
+      // ful'l' screen
+      l: {
         description: "Window: Fullscreen",
         to: [
           {
@@ -112,6 +111,8 @@ const rules: KarabinerRules[] = [
     s: {
       // System `i`nfo via System Profiler
       i: open(`-b com.apple.SystemProfiler`),
+      // open des`k`top
+      k: shell`open ~/Desktop`,
       p: open(`/System/Library/PreferencePanes/Displays.prefPane`),
       h: {
         to: [
