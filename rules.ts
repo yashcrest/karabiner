@@ -83,34 +83,6 @@ const rules: KarabinerRules[] = [
       d: open(
         `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
       ),
-      u: {
-        to: [
-          {
-            key_code: "volume_increment",
-          },
-        ],
-      },
-      i: {
-        to: [
-          {
-            key_code: "display_brightness_increment",
-          },
-        ],
-      },
-      j: {
-        to: [
-          {
-            key_code: "volume_decrement",
-          },
-        ],
-      },
-      k: {
-        to: [
-          {
-            key_code: "display_brightness_decrement",
-          },
-        ],
-      },
       h: {
         to: [
           {
@@ -119,6 +91,7 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+      i: open(`-b com.apple.SystemProfiler`),
       l: {
         to: [
           {
@@ -134,10 +107,10 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
+      k: open("~/Desktop"),
       // "T"heme
       t: open(`raycast://extensions/raycast/system/toggle-system-appearance`),
       c: open("raycast://extensions/raycast/system/open-camera"),
-      p: open(`-b com.apple.SystemProfiler`),
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
