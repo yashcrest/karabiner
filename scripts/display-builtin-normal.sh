@@ -3,7 +3,7 @@
 # If an external display is connected, keep it as the main display (origin 0,0)
 # and preserve the current relative arrangement of the built-in display.
 DISPLAYPLACER=/opt/homebrew/bin/displayplacer
-BUILTIN_RES="2056x1329"
+BUILTIN_RES="1920x1243"
 
 # Parse displayplacer list into per-display blocks and extract id/type/origin.
 LIST=$($DISPLAYPLACER list)
@@ -33,7 +33,7 @@ if [ -n "$EXTERNAL" ]; then
   NBY=$((BY - EY))
   $DISPLAYPLACER \
     "id:$EXTERNAL res:2560x1440 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" \
-    "id:$BUILTIN res:$BUILTIN_RES hz:120 color_depth:8 enabled:true scaling:on origin:($NBX,$NBY) degree:0"
+    "id:$BUILTIN res:$BUILTIN_RES hz:60 color_depth:8 enabled:true scaling:on origin:($NBX,$NBY) degree:0"
 else
-  $DISPLAYPLACER "id:$BUILTIN res:$BUILTIN_RES hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
+  $DISPLAYPLACER "id:$BUILTIN res:$BUILTIN_RES hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0"
 fi
