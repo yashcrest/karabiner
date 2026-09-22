@@ -61,6 +61,7 @@ const rules: KarabinerRules[] = [
       a: app("Activity Monitor"),
       d: app("Discord"),
       g: app("Google Chrome"),
+      i: app("System Settings"),
       p: app("Passwords"),
       m: app("Messages"),
       n: app("Notion"),
@@ -96,8 +97,8 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-       // ful'l' screen
-      l : {
+      // ful'l' screen
+      l: {
         description: "Window: Fullscreen",
         to: [
           {
@@ -192,7 +193,9 @@ const rules: KarabinerRules[] = [
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
       p: open("raycast://extensions/raycast/raycast/confetti"),
-      k: open("raycast://extensions/raycast/system/toggle-system-appearance"),
+      k: open(
+        "raycast://extensions/raycast/system-actions/toggle-system-appearance"
+      ),
     },
   }),
 ];
