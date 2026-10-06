@@ -60,7 +60,6 @@ const rules: KarabinerRules[] = [
     o: {
       a: app("Activity Monitor"),
       d: app("Discord"),
-      g: app("Google Chrome"),
       i: app("System Settings"),
       p: app("Passwords"),
       m: app("Messages"),
@@ -73,6 +72,14 @@ const rules: KarabinerRules[] = [
       v: app("Visual Studio Code"),
       y: app("Youtube Music"),
       z: app("Zen"),
+    },
+
+    // browser layer
+    b: {
+      a: app("Arc"),
+      d: app("Dia"),
+      m: app("Mozilla Firefox"),
+      s: app("Safari"),
     },
     // displayPlacer - scripts dynamically detect display IDs at runtime
     d: {
